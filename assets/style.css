@@ -340,8 +340,38 @@ li .a:hover{
       position: relative;
     }
 
-    .image{
-      background: url('images/sketch1.jpeg') no-repeat 75%;
+    .image1{
+      background: url('images/sharinganblack.jpg') no-repeat 75%;
+      background-size: cover;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.9;
+      height: 300px;
+      width: 300px;
+    }
+    .image1:hover{
+      background: url('images/sharingan.jpg') no-repeat 75%;
+      background-size: cover;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.9;
+      height: 300px;
+      width: 300px;
+      animation: fadeIn .08s;
+    }
+    .image2:hover{
+      background: url('images/heart.jpg') no-repeat 75%;
+      background-size: cover;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.9;
+      height: 300px;
+      width: 300px;
+      animation: fadeIn .08s;
+    }
+
+    .image2{
+      background: url('images/heartblack.jpg') no-repeat 75%;
       background-size: cover;
       position: absolute;
       z-index: 1;
@@ -350,7 +380,16 @@ li .a:hover{
       width: 300px;
     }
     /* The blur after the ikmage  */
-    .image:after {
+    .image1:after {
+      height: 100px;
+      content: '';
+      top: 200px;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      background: linear-gradient(rgba(9, 2, 4, 0), #444);
+    }
+    .image2:after {
       height: 100px;
       content: '';
       top: 200px;
