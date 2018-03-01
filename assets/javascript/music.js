@@ -73,4 +73,26 @@ $(document).ready(function(){
       menu.classList.remove('dim');
       footer.classList.remove('dim');
     }
+
+
+    // Init ScrollMagic
+  	var controller = new ScrollMagic.Controller();
+
+  	// Scene 1 - pin the second section
+  	var pinScene01 = new ScrollMagic.Scene({
+  		triggerElement: '.music-container',
+  		triggerHook: 0,
+  		duration: '100%'
+  	})
+  	.setPin('.uno .pin-wrapper')
+  	.addTo(controller);
+
+    // Scene 2 - pin the second section
+  	var pinScene02 = new ScrollMagic.Scene({
+  		triggerElement: '.music-container',
+  		triggerHook: 0,
+  		duration: '100%'
+  	})
+  	.setPin('.dos .pin-wrapper')
+  	.addTo(controller);
 });
