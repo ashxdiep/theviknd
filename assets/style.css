@@ -23,6 +23,7 @@ body{
 .name{
   font-size: 70px;
   grid-column-start: 1;
+  text-align: center;
 }
 
 .name.dim{
@@ -101,7 +102,7 @@ li .a:hover{
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
-  margin-left: 22rem;
+  margin-left: 23%;
   margin-bottom: 10rem;
   margin-top: 8rem;
 
@@ -248,6 +249,21 @@ li .a:hover{
       display: none;
     }
 
+    .music-back{
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: 25px;
+      text-align: right;
+      padding-right: 10rem;
+      padding-top: 5rem;
+      right: 0;
+      position: fixed;
+      z-index: 12;
+    }
+
+    .music-back:hover{
+      color: #787878;
+    }
+
     .musica{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -256,7 +272,7 @@ li .a:hover{
       padding-left: 1rem;
       padding-right: 1rem;
       padding-bottom: 1rem;
-      margin-left: 22rem;
+      margin-left: 23%;
       position:relative;
     }
 
@@ -303,19 +319,7 @@ li .a:hover{
           to { opacity: 1; }
     }
 
-    .music-back{
-      font-family: 'Alegreya Sans SC', sans-serif;
-      font-size: 25px;
-      text-align: right;
-      padding-right: 10rem;
-      padding-top: 5rem;
-      right: 0;
-      position: fixed;
-      z-index: 12;
-    }
-    .music-back:hover{
-      color: #787878;
-    }
+
 
     .description{
       margin-top: 300px;
@@ -488,4 +492,171 @@ li .a:hover{
     /* when stop */
     .wave:nth-child(3) {
       animation-duration: 45s;
+    }
+
+
+    /* Tour Container  */
+    .tour-container{
+      background: #888;
+      background: linear-gradient(to left, #888 , #d1d5d6);
+      width: 100%;
+      z-index: 10;
+      display: none;
+      height: 100vh;
+    }
+
+    .tour-back{
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: 25px;
+      text-align: right;
+      padding-right: 10rem;
+      padding-top: 5rem;
+      right: 0;
+      position: fixed;
+      z-index: 15;
+    }
+
+    .tour-back:hover{
+      color: #787878;
+    }
+
+    .tour-container.open{
+      display:block;
+      animation: fadeIn .5s;
+    }
+
+    .tour-box{
+      text-align: center;
+      padding-top: 20%;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: 40px;
+    }
+
+
+
+
+    @media (max-width: 1140px) and (min-width: 945px){
+
+
+
+      .musica{
+        grid-column-gap: 50%;
+      }
+    }
+    @media (max-width: 945px) and (min-width: 810px){
+
+      .name{
+        font-size: 40px;
+        padding-top: 25%;
+      }
+
+      h10{
+        font-size: 20px;
+      }
+      .description{
+        font-size: 10px;
+      }
+
+      .musica{
+        grid-column-gap: 50%;
+      }
+
+      .tour-box{
+        padding-top: 25%;
+      }
+    }
+    @media (max-width: 810px) and (min-width: 745px){
+      .name{
+        font-size: 40px;
+        padding-top: 25%;
+        text-align: center;
+      }
+
+      .menu{
+        padding-left: 90%;
+        padding-right: 0;
+        display: block;
+      }
+      .footer{
+        width: 100%;
+        left: 0;
+        right: 0;
+      }
+
+      h10{
+        display: none;
+      }
+      .description{
+        font-size: 10px;
+        margin-top: 370%;
+      }
+
+      .musica{
+        grid-column-gap: 70%;
+      }
+      .tour-box{
+        padding-top: 30%;
+      }
+    }
+
+    @media (max-width: 745px) and (min-width: 620px){
+      .name{
+        font-size: 30px;
+        padding-top: 25%;
+        text-align: center;
+        visibility: hidden;
+      }
+
+      .menu{
+        padding-left: 80%;
+        padding-right: 0;
+        display: block;
+      }
+      .footer{
+        width: 100%;
+        left: 0;
+        right: 0;
+      }
+
+      h10{
+        display: none;
+      }
+      .description{
+        display: none;
+      }
+
+      .musica{
+        grid-column-gap: 70%;
+      }
+      .tour-box{
+        padding-top: 40%;
+      }
+    }
+
+
+    @media (max-width: 620px) {
+
+      .menu{
+        padding-left: 40%;
+        padding-right: 0;
+      }
+      .name{
+        display: none;
+      }
+      .footer{
+        width: 100%;
+        left: 0;
+        right: 0;
+      }
+
+      h10{
+        display: none;
+      }
+      .description{
+        display: none;
+      }
+
+      .tour-box{
+        padding-top: 45%;
+      }
     }
